@@ -1,77 +1,85 @@
 *
 {
-  margin:0;
-  padding:0;
-  font-family:'Poppins', sans-serif;
-  box-sizing : border-box;
+   margin :0;
+   padding: 0;
+   font-family:'Poppins', sans-serif;
+   box-sizing:border-box;
 }
-body{
-    background: #001e4d;
-
-}
-.app{
-    background: #fff;
-    width:90%;
-    max-width:600px;
-    margin:100px auto 0;
-    border-radius:10px;
-    padding : 30px;
-}
-
-.app h1{
-   font-size:25px;
-   color: #001e4d;
-   font-weight:600;
-   border-bottom: 1px solid #333;
-   padding-bottom:30px;
-}
-.quiz{
-    padding: 20px 0;
-}
-.quiz h2{
-    font-size:18px;
-    color:#001e4d;
-    font-weight: 600px; 
-}
-.btn{
-    background:#fff;
-    color: #222;
-    font-weight:500;
+.hero{
     width:100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin:10px 0;
-    text-align : left;
-    border-radius: 4px;
-    cursor:pointer;
-    transition : all 0.3s;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758,#490d61);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:#fff;
 }
-.btn:hover:not([disabled]){
-    background:#222;
-    color: #fff;
+.hero h1{
+    font-weight:500;
+    font-size:45px;
+    margin-top:-50px;
+    margin-bottom: 50px;
+}
+.hero h1 span{
+    color: #ff2963;
+}
+textarea{
+    width:600px;
+    height:250px;
+    background:#403d84;
+    color:#fff;
+    font-size:15px;
+    border:0;
+    outline:0;
+    padding:20px;
+    border-radius:10px;
+    resize:none;
+    margin-bottom:30px;
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
 
+}
+.row{
+    width:600px;
+    display:flex;
+    align-items:center;
+    gap:20px;
     
 }
-.btn:disabled{
-    cursor : no-drop;
-}
+button{
+     background:#ff2963;
+     color:#fff;
+     font-size:16px;
+     padding: 10px 30px;
+     border-radius:35px;
+     border: 0;
+     outline:0;
+     cursor:pointer;
+     display:flex;
+     align-items:center;
 
-#next-btn {
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500 ;
-    width: 150px;
+}
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+select{
+    flex:1;
+    color:#fff;
+    background:#403d84;
+    height:50px;
+    padding: 0 20px;
+    outline:0;
     border:0;
-    padding: 10px;
-    margin:20px auto 0;
-    border: radius 4px;
-    cursor:pointer;
-    display: block;
-}
-.correct{
-    background: #9aeabc;
-
-}
-.incorrect{
-    background:#ff9393;
+    border-radius:35px;
+    appearance:none;
+    background-repeat:no-repeat;
+    background-image:url(images/pnghive.png);
+    background-size:15px;
+    background-position-x:calc(100% - 20px);
+    background-position-y: 20px;
+    
 }
